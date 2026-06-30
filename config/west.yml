@@ -1,0 +1,17 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: brickbots
+      url-base: https://github.com/brickbots
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: chocV
+      remote: brickbots
+      revision: main
+      path: modules/chocV
+  self:
+    path: config
